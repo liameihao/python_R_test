@@ -42,7 +42,14 @@ def kmer_function(kmer, fasta):
 
 **难度5**
 
-给取一段fastq文件，随机从中获得5000个序列（注意fastq序列格式），要求逐行读取，防止内存溢出，并输出结果
+给取一段fastq文件，随机从中获得5000(可以用别的数)个序列（注意fastq序列格式），要求逐行读取，防止内存溢出，并输出结果
+
+```
+number = 10 or 5000
+
+```
+
+
 
 ### 4
 
@@ -50,15 +57,18 @@ def kmer_function(kmer, fasta):
 
 首先获得负链序列，寻找正负链DNA的motif，并输出正负链的motif位置
 
-```
-
+```python
+motif = "ATTAC"
+#
+def find_motif(fasta, motif):
+    
 ```
 
 ### **5**
 
 **难度5**
 
-滑动窗口找最长序列的回文序列
+滑动窗口找一条序列的最长回文序列
 
 ```
 #
